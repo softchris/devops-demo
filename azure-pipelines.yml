@@ -19,5 +19,7 @@ steps:
   displayName: 'npm install'
 
 - task: PublishBuildArtifacts@1
+  inputs: 
+    pathtoPublish: $(build.artifactstagingdirectory) # dist or build files
 
 
